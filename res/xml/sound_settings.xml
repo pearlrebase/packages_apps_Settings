@@ -79,7 +79,7 @@
         settings:controller="com.android.settings.notification.NotificationVolumePreferenceController"/>
 
     <!-- Link ringtone and notification volumes -->
-    <com.potato.fries.preferences.SecureSettingSwitchPreference
+    <com.pearl.shell.preferences.SecureSettingSwitchPreference
         android:key="volume_link_notification"
         android:title="@string/volume_link_notification_title"
         android:defaultValue="true"
