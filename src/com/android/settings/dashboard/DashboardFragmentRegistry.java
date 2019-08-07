@@ -67,6 +67,8 @@ public class DashboardFragmentRegistry {
                 CategoryKey.CATEGORY_CONNECT);
         PARENT_TO_CATEGORY_KEY_MAP.put(AdvancedConnectedDeviceDashboardFragment.class.getName(),
                 CategoryKey.CATEGORY_DEVICE);
+        PARENT_TO_CATEGORY_KEY_MAP.put(ShellDashboardFragment.class.getName(),
+                CategoryKey.CATEGORY_SYSTEM);
         PARENT_TO_CATEGORY_KEY_MAP.put(AppAndNotificationDashboardFragment.class.getName(),
                 CategoryKey.CATEGORY_APPS);
         PARENT_TO_CATEGORY_KEY_MAP.put(PowerUsageSummary.class.getName(),
