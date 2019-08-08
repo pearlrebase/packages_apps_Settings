@@ -141,4 +141,13 @@
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
     <string name="data_usage_app_restrict_wifi_summary">Enable usage of Wi\u2011Fi data</string>
 
+    <!-- About phone screen, Pearl OS version -->
+    <string name="pearl_version">PearlOS version</string>
+    <string name="pearl_version_default">Unknown</string>
+    <string name="keywords_pearl_version">PearlOS version, pearl version</string>
+
+    <!-- About phone screen, build date -->
+    <string name="build_date">Build date</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">build date, build info</string>
 </resources>
