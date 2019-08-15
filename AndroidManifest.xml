@@ -3369,7 +3369,7 @@
 
         <activity android:name="Settings$ShellActivity"
             android:label="@string/shell_settings_title"
-            android:icon="@drawable/ic_settings_shell"
+            android:icon="@drawable/ic_shell"
             android:taskAffinity="">
             <intent-filter android:priority="1">
                 <action android:name="shell.settings.Shell" />
