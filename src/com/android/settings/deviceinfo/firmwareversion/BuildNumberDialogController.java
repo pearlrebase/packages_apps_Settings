@@ -38,10 +38,10 @@ public class BuildNumberDialogController {
         mDialog = dialog;
     }
 
-    private String getPixelExperienceVersion(){
-        String buildDate = SystemProperties.get("org.pixelexperience.build_date","");
-        String buildType = SystemProperties.get("org.pixelexperience.build_type","unofficial").toUpperCase();
-        return buildDate.equals("") ? "" : "PixelExperience-" + buildDate + "-" + buildType;
+    private String getPearlVersion(){
+        String buildDate = SystemProperties.get("org.pearl.build_date","");
+        String buildType = SystemProperties.get("org.pearl.build_type","unofficial").toUpperCase();
+        return buildDate.equals("") ? "" : "PearlOS-" + buildDate + "-" + buildType;
     }
 
     /**
@@ -52,10 +52,10 @@ public class BuildNumberDialogController {
         StringBuilder sb = new StringBuilder();
         sb.append(BidiFormatter.getInstance().unicodeWrap(
                 TextUtils.isEmpty(Build.VENDOR.BUILD_NUMBER_OVERRIDE) ? Build.DISPLAY : Build.VENDOR.BUILD_NUMBER_OVERRIDE));
-        String pixelExperienceVersion = getPixelExperienceVersion();
-        if (!pixelExperienceVersion.equals("")){
+        String PearlVersion = getPearlVersion();
+        if (!PearlVersion.equals("")){
             sb.append("\n");
-            sb.append(pixelExperienceVersion);
+            sb.append(PearlVersion);
         }
         sb.append("\n");
         sb.append(DeviceModelPreferenceController.getDeviceModel());
